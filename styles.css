@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+ 
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+ 
+nav {
+    margin-top: 1em;
+}
+ 
+nav a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+}
+ 
+main {
+    padding: 2em;
+}
+ 
+section {
+    margin-bottom: 2em;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+ 
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+ 
+label {
+    display: block;
+    margin-top: 0.5em;
+}
+ 
+input, select, textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+ 
+button {
+    padding: 0.7em 1.5em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+button:hover {
+    background-color: #555;
+}
+ 
+.property-widget {
+    border: 1px solid #ccc;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+ 
+.interested-button {
+    background-color: #007BFF;
+}
+ 
+.interested-button:hover {
+    background-color: #0056b3;
+}
+ 
+.like-button {
+    background-color: #28a745;
+    margin-left: 0.5em;
+}
+ 
+.like-button:hover {
+    background-color: #218838;
+}
+ 
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+ 
+#pagination button {
+    margin: 0 1em;
+}

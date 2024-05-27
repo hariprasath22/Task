@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Basic Application</h1>
+        <nav>
+            <a href="#" id="login-link">Login</a>
+            <a href="#" id="register-form">Register</a>
+            <a href="#" id="logout-link" style="display: none;">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <section id="registration">
+            <h2>Register</h2>
+            <form id="register-form">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+                
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" name="phone-number" required>
+                
+                <label for="role">Role:</label>
+                <select id="role" name="role" required>
+                    <option value="buyer">Buyer</option>
+                    <option value="seller">Seller</option>
+                </select>
+                
+                <button type="submit">Register</button>
+            </form>
+        </section>
+ 
+        <section id="login" style="display: none;">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="login-email" required>
+                
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="login-password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+        </section>
+ 
+        <section id="seller">
+            <h2>Seller Flow</h2>
+            <form id="post-property-form">
+                <h3>Post Property</h3>
+                <label for="property-title">Property Title:</label>
+                <input type="text" id="property-title" name="property-title" required>
+                
+                <label for="property-description">Description:</label>
+                <textarea id="property-description" name="property-description" required></textarea>
+                
+                <label for="bedrooms">Number of Bedrooms:</label>
+                <input type="number" id="bedrooms" name="bedrooms" required>
+                
+                <label for="bathrooms">Number of Bathrooms:</label>
+                <input type="number" id="bathrooms" name="bathrooms" required>
+                
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+                
+                <label for="nearby-amenities">Nearby Amenities (e.g., hospitals, colleges):</label>
+                <input type="text" id="nearby-amenities" name="nearby-amenities">
+                
+                <button type="submit">Post Property</button>
+            </form>
+            
+            <div id="posted-properties">
+                <h3>Your Posted Properties</h3>
+                <!-- List of properties posted by the seller -->
+            </div>
+        </section>
+ 
+        <section id="buyer">
+            <h2>Buyer Flow</h2>
+            <div id="property-list">
+                <h3>Available Properties</h3>
+                <!-- List of properties for buyers to view -->
+                <div class="property-widget">
+                    <h4>Property Title</h4>
+                    <p>Description</p>
+                    <p>Bedrooms: 3</p>
+                    <p>Bathrooms: 2</p>
+                    <p>Location: Example Location</p>
+                    <p>Nearby Amenities: Example Amenities</p>
+                    <button class="interested-button">I'm Interested</button>
+                    <button class="like-button">Like (<span class="like-count">0</span>)</button>
+                </div>
+            </div>
+            
+            <form id="filter-form">
+                <h3>Apply Filters</h3>
+                <label for="filter-bedrooms">Minimum Bedrooms:</label>
+                <input type="number" id="filter-bedrooms" name="filter-bedrooms">
+                
+                <label for="filter-bathrooms">Minimum Bathrooms:</label>
+                <input type="number" id="filter-bathrooms" name="filter-bathrooms">
+                
+                <label for="filter-location">Location:</label>
+                <input type="text" id="filter-location" name="filter-location">
+                
+                <button type="submit">Apply Filters</button>
+            </form>
+            
+            <div id="pagination">
+                <button id="prev-page" disabled>Previous</button>
+                <span id="page-number">1</span>
+                <button id="next-page">Next</button>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
